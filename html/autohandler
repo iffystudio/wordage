@@ -1,0 +1,5 @@
+<%init>
+  Hoo::SetMasonRequestObject( $m );
+
+  Hoo::HandleURL( { %ARGS, handler => 1 } );
+</%init>

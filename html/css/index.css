@@ -1,0 +1,18 @@
+body, h1, td { line-height: 1; margin: 0; }
+
+body { background: #f7f3e9; color: #e5a740; font: 24px courier; padding: 32px; text-align: center; user-select: none; }
+table { border-collapse: collapse; margin: 0 auto; position: relative; }
+
+table.s-6 { bottom: 10px; }
+table.s-7 { bottom: 6px; }
+table.s-8 { bottom: 4px; }
+table.s-9 { bottom: 1px; }
+
+table.s-6 td { height: 50px; width: 50px; }
+table.s-7 td { height: 43px; width: 43px; }
+table.s-8 td { height: 38px; width: 38px; }
+table.s-9 td { height: 33px; width: 33px; }
+table.s-10 td { height: 30px; width: 30px; }
+
+td { font-weight: bold; padding: 0; text-align: center; vertical-align: middle; }
+td.on { color: #906217; }

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- produced by Iffy Studio -->
+<html lang="en">
+  <head>
+% if ( $dev ) {
+    <link href="/css/?<% rand() %>" rel="stylesheet">
+% } else {
+    <link href="/css/?20171117_1" rel="stylesheet">
+% }
+    <meta charset="utf-8">
+    <title>Wordage</title>
+  </head>
+  <body>
+    <div id="all">\
+<%init>
+  my ( $dev );
+
+  $dev = ( $ENV{ HTTP_HOST } =~ /^wordage$/ );
+</%init>

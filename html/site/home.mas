@@ -1,0 +1,3 @@
+<& /site/header.mas, %ARGS &>
+      <h1>Wordage</h1>
+<& /site/footer.mas, %ARGS &>\

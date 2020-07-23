@@ -1,0 +1,12 @@
+<%args>
+  $keywords => undef
+  $url
+</%args>
+<%init>
+  if ( $keywords ) {
+    $m->comp( '/site/board.mas', keywords => $keywords, url => $url );
+    }
+  else {
+     $m->comp( '/site/home.mas' );
+    }
+</%init>

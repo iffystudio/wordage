@@ -1,0 +1,29 @@
+<& /site/header.mas, title => 'Board', %ARGS &>
+      <table class="s-<% $size %>">
+        <tr>\
+% for $i ( 0 .. @letters - 1 ) {
+<td<% $letters[ $i ] eq uc $letters[ $i ] ? ' class="on"' : '' %>><% uc $letters[ $i ] %></td>\
+%  unless ( ( $i + 1 ) % $size ) {
+</tr>\
+%   if ( $i eq scalar @letters - 1 ) {
+
+%   } else {
+
+        <tr>\
+%   }
+%  }
+% }
+      </table>
+<& /site/footer.mas, %ARGS &>\
+<%args>
+  $keywords
+</%args>
+<%init>
+  my ( $i, @letters, $size );
+
+  $size = sqrt length $keywords;
+
+  $m->redirect( '/' ) unless ( int $size == $size && $size < 11 && $size > 5 );
+
+  @letters = split '', $keywords;
+</%init>
